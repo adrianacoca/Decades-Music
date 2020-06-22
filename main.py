@@ -20,6 +20,7 @@ top_artists = {"Elton John":"b83bc61f-8451-4a5d-8b8e-7e9ed295e822",
 "Post Malone":"b1e26560-60e5-4236-bbdb-9aa5a8d5ee19",
 "Taylor Swift":"20244d07-534f-4eff-b4d4-930878889970"}
 
+# API Music Brainz
 for key, value in top_artists.items():
     top_artists[key] = func.artist_location(value)
 alldecades = pd.read_csv('output/music_decades.csv')
